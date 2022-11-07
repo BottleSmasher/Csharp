@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <p1>http://eve.kean.edu/~diamande/Static_website/project1.html</p1>
+   <br>
+   <meta charset="utf-8">
+   <title>Demetrios's Website</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   Current Time:
+   <input type="text" id="currentTime">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+     body {
+  background-color: tan;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<header>
+<h1 style="color:red;">Home Page</h1>
+</header>
+<body>
+   <center>
+      <a href="project1.html" class="button">Home</a>
+      <a href="AboutMe.html" class="button">About me</a>
+      <a href="experience.html" class="button">My work / my future work</a>
+      <a href="ContactMe.html" class="button">Contact Me</a>
+            </center>
+   <article>
+      <h1 style="color:red;">Welcome!</h1>
+      <h3 font-size: 50px>  Hello, this is a website about Demetrios. Here are some pictures of me.
+         <br>
+      </h3>
+           <button onclick="myFunction()" class="button">Try it</button>
+
+           <p id="demo"></p>
+   
+         <center>
+           <p3> This is a picture of when i met Mickey Gall the UFC fighter at the gym. <br><img src = "41541886_236001990401502_3022520351599497855_n.jpg" width = 100%
+           class = imagefluid alt = "Soccer player" title="soccer">
+            <br>
+         </p3>
+        <p3>This is a picture of my Family<img src = "38697934_2026513980702249_2676984902926204928_n.jpg" width = 100%
+         class = imagefluid alt = "Family" title="Family">
+      </p3> 
+         </div>
+         </center>
+      </article>
+      <script>
+         function myFunction() {
+         let person = prompt("Please enter your name", "Name");
+         if (person != null) {
+         document.getElementById("demo").innerHTML =
+         "Hello " + person + "! How are you today?";
+  }
+}
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("currentTime").value = time;
+         </script>
+      <footer>
+         <p>Author: Demetrios<br>
+         <a href="mailto:diamande@kean.edu">diamande@kean.edu</a></p>
+       </footer>
+</body>
+</html>

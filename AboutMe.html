@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <p1>http://eve.kean.edu/~diamande/Static_website/project1.html</p1>
+   <br>
+   <meta charset="utf-8">
+   <title>Demetrios's Website</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   Current Time:
+   <input type="text" id="currentTime">
+</head>
+<style>
+    th, td {
+        border-style:solid;
+        border-color: #96D4D4;
+    }
+    body {
+      background-color: tan;
+}
+   .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+<header>
+   <h1>About Me</h1>
+</header>
+<body>
+  <center>
+    <a href="project1.html" class="button">Home</a>
+    <a href="AboutMe.html" class="button">About me</a>
+    <a href="experience.html" class="button">My work / my future work</a>
+    <a href="ContactMe.html" class="button">Contact Me</a>
+             </center>
+        <h2>About Me Table</h2>
+        <center>
+        <table>
+          <tr>
+            <th>Major</th>
+            <th>Skills</th>
+            <th>Hobbies</th>
+          </tr>
+          <tr>
+            <td>Information Technology</td>
+            <td>Coding</td>
+            <td>Video games</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Cooking</td>
+            <td>Gym</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Driving</td>
+            <td>Soccer</td>
+          </tr>
+          <table class="table table-success table-striped"></table>
+        </table>
+        </center>
+        <button onclick="myFunction()" class="button">Click for pictures</button>
+        <div id="myDIV">
+       <p3>This is a picture of when i won a soccer tournament</p3>
+        <img src = "44425906_1949391071809957_872570012507812139_n.jpg" width = "800" height = "800"
+        class = imagefluid alt = "Soccer player" title="soccer">
+          </div>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+              var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("currentTime").value = time;
+              </script>
+            <footer>
+              <p>Author: Demetrios<br>
+              <a href="mailto:diamande@kean.edu">diamande@kean.edu</a></p>
+            </footer>
+</body>
+</html>
